@@ -1,0 +1,655 @@
+{
+  "configuration": {
+    "model": "local-model",
+    "framing_labels": {
+      "economic": "Economic",
+      "capacity": "Capacity and resources",
+      "morality": "Morality",
+      "fairness": "Fairness and equality",
+      "legality": "Legality, constitutionality and jurisprudence",
+      "policy": "Policy prescription and evaluation",
+      "crime": "Crime and punishment",
+      "security": "Security and defense",
+      "health": "Health and safety",
+      "quality_life": "Quality of life",
+      "culture": "Cultural identity",
+      "public_op": "Public opinion",
+      "political": "Political",
+      "regulation": "External regulation and reputation"
+    },
+    "political_leanings": [
+      "left",
+      "left_lean",
+      "center",
+      "right_lean",
+      "right"
+    ]
+  },
+  "summary": {
+    "articles_processed": 20,
+    "framing_correct_labels": 42,
+    "framing_total_ground_truth_labels": 72,
+    "framing_label_accuracy": 0.5833333333333334,
+    "framing_precision": 0.7368421052631579,
+    "framing_recall": 0.5833333333333334,
+    "framing_f1": 0.6511627906976745,
+    "framing_exact_match_count": 2,
+    "framing_exact_match_accuracy": 0.1,
+    "political_leaning_correct": 5,
+    "political_leaning_scored": 20,
+    "political_leaning_accuracy": 0.25
+  },
+  "individual_results": [
+    {
+      "uuid": "459dde0c-615d-41e3-a0d6-9270a82c3dca",
+      "title": "Hamas Attack Was A ‘Victory’ Over US-Led ‘Arrogant Western System,’ Hezbollah Spokesman Says",
+      "source_domain": "dailycaller.com",
+      "actual_framing_labels": [
+        "morality",
+        "crime",
+        "security",
+        "political",
+        "regulation"
+      ],
+      "predicted_framing_labels": [
+        "political",
+        "security",
+        "crime"
+      ],
+      "correct_framing_labels": 3,
+      "total_ground_truth_framing_labels": 5,
+      "framing_label_accuracy": 0.6,
+      "framing_precision": 1.0,
+      "framing_recall": 0.6,
+      "framing_f1": 0.7499999999999999,
+      "framing_exact_match": false,
+      "correct_framing_label_names": [
+        "crime",
+        "political",
+        "security"
+      ],
+      "actual_political_leaning": "right",
+      "predicted_political_leaning": "left",
+      "political_leaning_correct": false,
+      "political_leaning_scored": true
+    },
+    {
+      "uuid": "c9d4f262-204f-42f1-b346-908b5c50ee7d",
+      "title": "Soccer star Achraf Hakimi urges Moroccans to 'help each other' after earthquake",
+      "source_domain": "apnews.com",
+      "actual_framing_labels": [
+        "security",
+        "health",
+        "public_op"
+      ],
+      "predicted_framing_labels": [
+        "security",
+        "health",
+        "public_op"
+      ],
+      "correct_framing_labels": 3,
+      "total_ground_truth_framing_labels": 3,
+      "framing_label_accuracy": 1.0,
+      "framing_precision": 1.0,
+      "framing_recall": 1.0,
+      "framing_f1": 1.0,
+      "framing_exact_match": true,
+      "correct_framing_label_names": [
+        "health",
+        "public_op",
+        "security"
+      ],
+      "actual_political_leaning": "left_lean",
+      "predicted_political_leaning": "center",
+      "political_leaning_correct": false,
+      "political_leaning_scored": true
+    },
+    {
+      "uuid": "143032bb-410b-4c2d-bd94-07844f17d786",
+      "title": "Louisiana judge denies DOJ motion to stay order in social media case",
+      "source_domain": "thehill.com",
+      "actual_framing_labels": [
+        "legality",
+        "policy"
+      ],
+      "predicted_framing_labels": [
+        "legality",
+        "political"
+      ],
+      "correct_framing_labels": 1,
+      "total_ground_truth_framing_labels": 2,
+      "framing_label_accuracy": 0.5,
+      "framing_precision": 0.5,
+      "framing_recall": 0.5,
+      "framing_f1": 0.5,
+      "framing_exact_match": false,
+      "correct_framing_label_names": [
+        "legality"
+      ],
+      "actual_political_leaning": "center",
+      "predicted_political_leaning": "right_lean",
+      "political_leaning_correct": false,
+      "political_leaning_scored": true
+    },
+    {
+      "uuid": "2737980f-a367-45fc-97bf-074f956daa28",
+      "title": "How to navigate a buffet while sticking to your health goals",
+      "source_domain": "www.foxnews.com",
+      "actual_framing_labels": [
+        "health",
+        "quality_life",
+        "fairness"
+      ],
+      "predicted_framing_labels": [
+        "health",
+        "quality_life"
+      ],
+      "correct_framing_labels": 2,
+      "total_ground_truth_framing_labels": 3,
+      "framing_label_accuracy": 0.6666666666666666,
+      "framing_precision": 1.0,
+      "framing_recall": 0.6666666666666666,
+      "framing_f1": 0.8,
+      "framing_exact_match": false,
+      "correct_framing_label_names": [
+        "health",
+        "quality_life"
+      ],
+      "actual_political_leaning": "right",
+      "predicted_political_leaning": "center",
+      "political_leaning_correct": false,
+      "political_leaning_scored": true
+    },
+    {
+      "uuid": "bd878f1a-24eb-4d0f-a8e5-508d4b60d827",
+      "title": "Feinstein gives up power of attorney to her daughter",
+      "source_domain": "www.washingtontimes.com",
+      "actual_framing_labels": [
+        "legality",
+        "fairness",
+        "health",
+        "political",
+        "public_op"
+      ],
+      "predicted_framing_labels": [
+        "political",
+        "legality",
+        "economic",
+        "health"
+      ],
+      "correct_framing_labels": 3,
+      "total_ground_truth_framing_labels": 5,
+      "framing_label_accuracy": 0.6,
+      "framing_precision": 0.75,
+      "framing_recall": 0.6,
+      "framing_f1": 0.6666666666666665,
+      "framing_exact_match": false,
+      "correct_framing_label_names": [
+        "health",
+        "legality",
+        "political"
+      ],
+      "actual_political_leaning": "right_lean",
+      "predicted_political_leaning": "left",
+      "political_leaning_correct": false,
+      "political_leaning_scored": true
+    },
+    {
+      "uuid": "9996c16c-bbee-4fea-8064-a35bcc54b65d",
+      "title": "Bronx day care suspects hauled off to face charges after apparent fentanyl exposure killed toddler, hospitalized 3 others",
+      "source_domain": "nypost.com",
+      "actual_framing_labels": [
+        "crime",
+        "health",
+        "quality_life"
+      ],
+      "predicted_framing_labels": [
+        "crime",
+        "health",
+        "security"
+      ],
+      "correct_framing_labels": 2,
+      "total_ground_truth_framing_labels": 3,
+      "framing_label_accuracy": 0.6666666666666666,
+      "framing_precision": 0.6666666666666666,
+      "framing_recall": 0.6666666666666666,
+      "framing_f1": 0.6666666666666666,
+      "framing_exact_match": false,
+      "correct_framing_label_names": [
+        "crime",
+        "health"
+      ],
+      "actual_political_leaning": "right_lean",
+      "predicted_political_leaning": "left",
+      "political_leaning_correct": false,
+      "political_leaning_scored": true
+    },
+    {
+      "uuid": "12f075b4-c878-4823-8c51-242b3885e470",
+      "title": "Biden’s UAW endorsement underscores another big contrast with Trump",
+      "source_domain": "www.msnbc.com",
+      "actual_framing_labels": [
+        "political",
+        "economic",
+        "fairness"
+      ],
+      "predicted_framing_labels": [
+        "political",
+        "economic"
+      ],
+      "correct_framing_labels": 2,
+      "total_ground_truth_framing_labels": 3,
+      "framing_label_accuracy": 0.6666666666666666,
+      "framing_precision": 1.0,
+      "framing_recall": 0.6666666666666666,
+      "framing_f1": 0.8,
+      "framing_exact_match": false,
+      "correct_framing_label_names": [
+        "economic",
+        "political"
+      ],
+      "actual_political_leaning": "left",
+      "predicted_political_leaning": "left",
+      "political_leaning_correct": true,
+      "political_leaning_scored": true
+    },
+    {
+      "uuid": "e656d04f-3d6e-4aba-875f-8172d5891ba6",
+      "title": "Cal Fire urges homeowners to begin preparing for fire season as May approaches",
+      "source_domain": "www.cbsnews.com",
+      "actual_framing_labels": [
+        "security",
+        "health",
+        "policy"
+      ],
+      "predicted_framing_labels": [
+        "health",
+        "security"
+      ],
+      "correct_framing_labels": 2,
+      "total_ground_truth_framing_labels": 3,
+      "framing_label_accuracy": 0.6666666666666666,
+      "framing_precision": 1.0,
+      "framing_recall": 0.6666666666666666,
+      "framing_f1": 0.8,
+      "framing_exact_match": false,
+      "correct_framing_label_names": [
+        "health",
+        "security"
+      ],
+      "actual_political_leaning": "left_lean",
+      "predicted_political_leaning": "center",
+      "political_leaning_correct": false,
+      "political_leaning_scored": true
+    },
+    {
+      "uuid": "b6050dd4-b93b-46ae-92e7-406dba108cf5",
+      "title": "Duran Duran guitarist Andy Taylor received end-of-life care after cancer diagnosis",
+      "source_domain": "nypost.com",
+      "actual_framing_labels": [
+        "health",
+        "legality",
+        "policy",
+        "quality_life"
+      ],
+      "predicted_framing_labels": [
+        "health",
+        "quality_life"
+      ],
+      "correct_framing_labels": 2,
+      "total_ground_truth_framing_labels": 4,
+      "framing_label_accuracy": 0.5,
+      "framing_precision": 1.0,
+      "framing_recall": 0.5,
+      "framing_f1": 0.6666666666666666,
+      "framing_exact_match": false,
+      "correct_framing_label_names": [
+        "health",
+        "quality_life"
+      ],
+      "actual_political_leaning": "right_lean",
+      "predicted_political_leaning": "center",
+      "political_leaning_correct": false,
+      "political_leaning_scored": true
+    },
+    {
+      "uuid": "8dd30098-3162-4c45-abad-cb777881f931",
+      "title": "Dog Blinded in One Eye by Acid Attack Ready to 'Begin Again' After Makeover",
+      "source_domain": "www.newsweek.com",
+      "actual_framing_labels": [
+        "health",
+        "culture",
+        "public_op",
+        "political"
+      ],
+      "predicted_framing_labels": [
+        "health",
+        "morality",
+        "crime"
+      ],
+      "correct_framing_labels": 1,
+      "total_ground_truth_framing_labels": 4,
+      "framing_label_accuracy": 0.25,
+      "framing_precision": 0.3333333333333333,
+      "framing_recall": 0.25,
+      "framing_f1": 0.28571428571428575,
+      "framing_exact_match": false,
+      "correct_framing_label_names": [
+        "health"
+      ],
+      "actual_political_leaning": "center",
+      "predicted_political_leaning": "center",
+      "political_leaning_correct": true,
+      "political_leaning_scored": true
+    },
+    {
+      "uuid": "ff3a118b-3a37-4c51-9d6b-60a52b8f6922",
+      "title": "Dem Governor Murphy says NJ can't take any migrants from NYC as DHS eyes new housing locations",
+      "source_domain": "www.foxnews.com",
+      "actual_framing_labels": [
+        "political",
+        "legality",
+        "fairness",
+        "policy"
+      ],
+      "predicted_framing_labels": [
+        "political",
+        "economic",
+        "policy",
+        "regulation"
+      ],
+      "correct_framing_labels": 2,
+      "total_ground_truth_framing_labels": 4,
+      "framing_label_accuracy": 0.5,
+      "framing_precision": 0.5,
+      "framing_recall": 0.5,
+      "framing_f1": 0.5,
+      "framing_exact_match": false,
+      "correct_framing_label_names": [
+        "policy",
+        "political"
+      ],
+      "actual_political_leaning": "right",
+      "predicted_political_leaning": "left_lean",
+      "political_leaning_correct": false,
+      "political_leaning_scored": true
+    },
+    {
+      "uuid": "4899f1b4-8b09-4757-8cbf-d4b43e36a0eb",
+      "title": "Trump urges Supreme Court to reject efforts to keep him off ballot, warning of \"chaos\" in new filing",
+      "source_domain": "www.cbsnews.com",
+      "actual_framing_labels": [
+        "legality",
+        "crime"
+      ],
+      "predicted_framing_labels": [
+        "legality",
+        "political",
+        "crime"
+      ],
+      "correct_framing_labels": 2,
+      "total_ground_truth_framing_labels": 2,
+      "framing_label_accuracy": 1.0,
+      "framing_precision": 0.6666666666666666,
+      "framing_recall": 1.0,
+      "framing_f1": 0.8,
+      "framing_exact_match": false,
+      "correct_framing_label_names": [
+        "crime",
+        "legality"
+      ],
+      "actual_political_leaning": "left_lean",
+      "predicted_political_leaning": "right",
+      "political_leaning_correct": false,
+      "political_leaning_scored": true
+    },
+    {
+      "uuid": "923fbb4c-252c-493d-a503-53b50f74771b",
+      "title": "Upgrading Web3 User Experience With Account Abstraction",
+      "source_domain": "www.forbes.com",
+      "actual_framing_labels": [
+        "economic",
+        "quality_life",
+        "policy",
+        "culture"
+      ],
+      "predicted_framing_labels": [
+        "economic",
+        "health",
+        "quality_life",
+        "regulation"
+      ],
+      "correct_framing_labels": 2,
+      "total_ground_truth_framing_labels": 4,
+      "framing_label_accuracy": 0.5,
+      "framing_precision": 0.5,
+      "framing_recall": 0.5,
+      "framing_f1": 0.5,
+      "framing_exact_match": false,
+      "correct_framing_label_names": [
+        "economic",
+        "quality_life"
+      ],
+      "actual_political_leaning": "center",
+      "predicted_political_leaning": "center",
+      "political_leaning_correct": true,
+      "political_leaning_scored": true
+    },
+    {
+      "uuid": "20aad4a4-c2ad-4474-b87c-8b0ffc3847d5",
+      "title": "Maryland Sen. Ben Cardin to retire after 2024",
+      "source_domain": "www.axios.com",
+      "actual_framing_labels": [
+        "political",
+        "public_op",
+        "fairness"
+      ],
+      "predicted_framing_labels": [
+        "political"
+      ],
+      "correct_framing_labels": 1,
+      "total_ground_truth_framing_labels": 3,
+      "framing_label_accuracy": 0.3333333333333333,
+      "framing_precision": 1.0,
+      "framing_recall": 0.3333333333333333,
+      "framing_f1": 0.5,
+      "framing_exact_match": false,
+      "correct_framing_label_names": [
+        "political"
+      ],
+      "actual_political_leaning": "center",
+      "predicted_political_leaning": "left",
+      "political_leaning_correct": false,
+      "political_leaning_scored": true
+    },
+    {
+      "uuid": "8f66bfc2-d610-41ed-83c0-473d427fa8ea",
+      "title": "\"Always maintain awareness\": String of robberies has Sacramento-area communities on edge",
+      "source_domain": "www.cbsnews.com",
+      "actual_framing_labels": [
+        "crime",
+        "security",
+        "public_op"
+      ],
+      "predicted_framing_labels": [
+        "crime",
+        "security"
+      ],
+      "correct_framing_labels": 2,
+      "total_ground_truth_framing_labels": 3,
+      "framing_label_accuracy": 0.6666666666666666,
+      "framing_precision": 1.0,
+      "framing_recall": 0.6666666666666666,
+      "framing_f1": 0.8,
+      "framing_exact_match": false,
+      "correct_framing_label_names": [
+        "crime",
+        "security"
+      ],
+      "actual_political_leaning": "left_lean",
+      "predicted_political_leaning": "center",
+      "political_leaning_correct": false,
+      "political_leaning_scored": true
+    },
+    {
+      "uuid": "088df7f8-ab5c-453d-80ca-6a7ea6c892a3",
+      "title": "Minnesota city where entire police force quit narrowly avoids having no law enforcement",
+      "source_domain": "www.nbcnews.com",
+      "actual_framing_labels": [
+        "security",
+        "policy",
+        "fairness",
+        "legality",
+        "quality_life"
+      ],
+      "predicted_framing_labels": [
+        "crime",
+        "security",
+        "economic",
+        "political"
+      ],
+      "correct_framing_labels": 1,
+      "total_ground_truth_framing_labels": 5,
+      "framing_label_accuracy": 0.2,
+      "framing_precision": 0.25,
+      "framing_recall": 0.2,
+      "framing_f1": 0.22222222222222224,
+      "framing_exact_match": false,
+      "correct_framing_label_names": [
+        "security"
+      ],
+      "actual_political_leaning": "left_lean",
+      "predicted_political_leaning": "center",
+      "political_leaning_correct": false,
+      "political_leaning_scored": true
+    },
+    {
+      "uuid": "c03f1b80-ae34-45df-afe8-9c969a9a18d3",
+      "title": "Syracuse Diocese Paying Sex Abuse Survivors $100 Million-Largest Settlement Since 2007",
+      "source_domain": "www.forbes.com",
+      "actual_framing_labels": [
+        "morality",
+        "crime",
+        "fairness",
+        "legality",
+        "policy"
+      ],
+      "predicted_framing_labels": [
+        "crime",
+        "morality",
+        "legality",
+        "policy"
+      ],
+      "correct_framing_labels": 4,
+      "total_ground_truth_framing_labels": 5,
+      "framing_label_accuracy": 0.8,
+      "framing_precision": 1.0,
+      "framing_recall": 0.8,
+      "framing_f1": 0.888888888888889,
+      "framing_exact_match": false,
+      "correct_framing_label_names": [
+        "crime",
+        "legality",
+        "morality",
+        "policy"
+      ],
+      "actual_political_leaning": "center",
+      "predicted_political_leaning": "center",
+      "political_leaning_correct": true,
+      "political_leaning_scored": true
+    },
+    {
+      "uuid": "2bdfd5cc-ddb8-4bc6-8f2f-37501049ebb3",
+      "title": "Grayscale Lands Court Victory Over SEC In Battle For Spot Bitcoin ETF",
+      "source_domain": "www.forbes.com",
+      "actual_framing_labels": [
+        "legality",
+        "policy",
+        "economic",
+        "security"
+      ],
+      "predicted_framing_labels": [
+        "legality",
+        "economic",
+        "political",
+        "regulation"
+      ],
+      "correct_framing_labels": 2,
+      "total_ground_truth_framing_labels": 4,
+      "framing_label_accuracy": 0.5,
+      "framing_precision": 0.5,
+      "framing_recall": 0.5,
+      "framing_f1": 0.5,
+      "framing_exact_match": false,
+      "correct_framing_label_names": [
+        "economic",
+        "legality"
+      ],
+      "actual_political_leaning": "center",
+      "predicted_political_leaning": "center",
+      "political_leaning_correct": true,
+      "political_leaning_scored": true
+    },
+    {
+      "uuid": "b1000284-b66a-4395-93f7-32d087e62bad",
+      "title": "CBS News analysis: Most Republicans agree with \"poisoning the blood\" language",
+      "source_domain": "www.cbsnews.com",
+      "actual_framing_labels": [
+        "political",
+        "crime",
+        "public_op",
+        "culture"
+      ],
+      "predicted_framing_labels": [
+        "political",
+        "public_op"
+      ],
+      "correct_framing_labels": 2,
+      "total_ground_truth_framing_labels": 4,
+      "framing_label_accuracy": 0.5,
+      "framing_precision": 1.0,
+      "framing_recall": 0.5,
+      "framing_f1": 0.6666666666666666,
+      "framing_exact_match": false,
+      "correct_framing_label_names": [
+        "political",
+        "public_op"
+      ],
+      "actual_political_leaning": "left_lean",
+      "predicted_political_leaning": "right",
+      "political_leaning_correct": false,
+      "political_leaning_scored": true
+    },
+    {
+      "uuid": "aec4a67a-4577-4472-a206-499c8c20866a",
+      "title": "Video, pictures of Hilary aftermath in Palm Springs show unprecedented flooding and rain damage from storm",
+      "source_domain": "www.cbsnews.com",
+      "actual_framing_labels": [
+        "health",
+        "security",
+        "quality_life"
+      ],
+      "predicted_framing_labels": [
+        "health",
+        "security",
+        "quality_life"
+      ],
+      "correct_framing_labels": 3,
+      "total_ground_truth_framing_labels": 3,
+      "framing_label_accuracy": 1.0,
+      "framing_precision": 1.0,
+      "framing_recall": 1.0,
+      "framing_f1": 1.0,
+      "framing_exact_match": true,
+      "correct_framing_label_names": [
+        "health",
+        "quality_life",
+        "security"
+      ],
+      "actual_political_leaning": "left_lean",
+      "predicted_political_leaning": "center",
+      "political_leaning_correct": false,
+      "political_leaning_scored": true
+    }
+  ]
+}
